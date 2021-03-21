@@ -1,0 +1,522 @@
+*{
+    margin: 5px;
+    font-family: "lobster",cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* background-color: darkgrey; */
+    
+}
+
+.header{
+    background-color: darkgrey;
+    padding: 5px;
+    height:20%;
+    
+}
+.webName{
+    
+    position:relative;
+    color: white;
+    top: 20px;
+    left: 100px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+
+}
+.flights{
+    float: left;
+    position:relative;
+    left: 50%;
+    top:-10px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+.flights:hover{
+    opacity: 80%;
+    color: white;
+    
+}
+.sights{
+    float: left;
+    position:relative;
+    left: 60%;
+    top: -10px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    
+}
+.dateField{
+    font-family: "Lobster",cursive;
+    font-size: 20px;
+    padding:8px 0 8px 0;
+    width: fit-content;
+}
+.sights:hover{
+    opacity: 80%;
+    color: white;
+    
+}
+.flightHeader{
+    font-family: "Lobster",cursive;
+    font-size: 30px;
+    padding-left:10px;
+    margin: 20px;
+    position:relative;
+    left: -20px;
+    top: -20px;
+    background-color: grey;
+    height: fit-content;
+    width: 250px;
+
+
+
+}
+.flightHeader1{
+position: relative;
+top: -45px;
+text-align: center;
+background-color:white;
+margin: 15px 10px;
+font-size: 30px;
+font-family: "lobster", cursive;
+border: grey solid 5px;
+border-radius: 15px;
+
+}
+
+.weatherHeader{
+    font-family: "Lobster",cursive;
+    font-size: 30px;
+    padding:8px 0 8px 0;
+    margin-left: 0px;
+    margin-top: -370px;
+}
+
+.departureCity, .arrivalCity{
+    text-align: center;
+    margin: 20px;
+    font-size: 150%;
+    
+
+}   
+
+.departureCity fieldset input{
+    margin: 5px;
+    width: 90%;
+}
+.arrivalCity fieldset input{
+    margin: 5px;
+    width: 90%;
+}
+
+.arrHeader{
+    font-family: "Lobster",cursive;
+    font-size: 25px;
+    margin: 5px;
+    
+}
+
+
+.flightPlanner{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    font-family: "Lobster",cursive;
+    position: relative;
+    border: grey 15px solid;
+    flex-direction: row;
+    height: 60%;
+
+    
+
+}
+
+.cityPicker{
+    
+    flex-flow: column;
+    max-width: 40%;
+    border: grey 5px solid;
+    
+}
+
+
+.mapHeader{
+    flex-direction: column;
+    background-color: grey;
+    font-size: 20px;
+    padding: 10px;
+    height: fit-content;
+    position: relative;
+    left: 80px;
+    top: 10px;
+   
+    
+}
+#map {
+    margin: 10px;
+    float: right;
+    position: relative;
+    min-width: 375px;
+    min-height: 400px;
+    width: 45%;
+    padding: 15px;
+    border: grey solid 15px;
+    
+    
+    
+}
+
+.datePickers{
+    margin:5px;
+    position: relative;
+    left: 150px;
+    width: fit-content;
+    
+}
+
+.textField{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "lobster", cursive;
+    margin: 30px 30px 10px 50px ;
+    border: grey solid 5px;
+    border-radius: 15px;
+    
+    min-width: 400px;
+    text-align: center;
+    height: 500px;
+}
+
+.flightDisplay{
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px;
+   background-color: paleturquoise;
+   border: grey solid 5px;
+   border-radius: 15px;
+    margin: 5px;
+    font-size: 20px;
+
+}
+
+
+
+
+  
+  .overflow {
+    height: 200px;
+  }
+.submitButton{
+    font-family: "lobster", cursive;
+    font-size: 30px;
+    width: 300px;
+    background-color: rgb(40, 115, 214);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+.submitButton:hover{
+    font-size: 30px;
+    width: 350px;
+    background-color: rgb(22, 76, 146);
+    color: white;
+    transition: ease 10ms;
+
+}
+
+.searchBtn{
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_qRnAGHixflpv9TmXp2BwGNqmmPpTR9AwA&usqp=CAU")
+}
+
+.searchBtn:focus {
+    border: none;
+    outline-color: rgb(35, 35, 221);
+}
+
+.BtnName {
+    font-family: 'lobster' , cursive;
+    margin-top: -5px;
+    color: black;
+}
+
+.searchInput {
+    width: 170px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.CitySearch {
+    position: relative;
+    left: 5%;
+    font-family:'lobster', cursive;
+}
+
+.container{
+    display: flex;
+    
+    margin: 5px;
+    padding: 5px;;
+    border: 5px solid grey;
+    border-radius:15px ;
+    position: relative;
+    left: 13%;
+    
+    
+   } 
+
+   .box2 {
+    position:fixed right;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(112, 207, 245) ;
+    border-radius: 50%;
+    margin: -100px 0px 0px 1000px
+   }
+
+   .sun {
+    width:200px;
+    height: 150px;
+    margin: -170px 0px 0px 1020px
+   }
+
+   .cloud {
+    width:200px;
+    height: 150px;
+    margin: -100px 0px 0px 980px
+   }
+
+   .CityName {
+    margin-left: 125px;
+    font-size: x-large ;
+    font-family: 'lobster', cursive;
+}
+
+.row1 {
+    margin-left:100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row2 {
+    Margin-left: 100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row3 {
+    margin-left: 100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row4 {
+    margin-left:100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+/* .box {
+    position:fixed right;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(70, 150, 182) ;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin: -170px 0px 0px 1000px
+}
+
+.plane {
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    margin: -5px 0px 0px 980px
+}
+
+.globe {
+    width:200px;
+    height: 150px;
+    margin: -150px 0px 0px 1000px
+} */
+ 
+
+
+
+
+  @media screen and (max-width:1056px){
+   
+      
+    .header{
+          height: 100px;
+          padding:5px;
+      }
+    .webName{
+        font-size: 35px;
+        position: relative;
+        top:4px;
+      }
+   .flights {
+          position: relative;
+          top:-18px;
+          left:250px;
+          font-size: 25px;
+          margin-right: 5px;
+   }
+   .sights {
+    position: relative;
+    top: -18px;
+    left: 250px;
+    font-size: 25px;
+   }
+   .mapHeader{
+       position: relative;
+       top: 5px;
+       left: -2px;
+       text-align: center;
+       font-size: 30px;
+       
+   }
+   
+   /* .box {
+    position:'relative';
+    width: 200px;
+    height: 200px;
+    background-color: rgb(70, 150, 182) ;
+    border-radius: 50%;
+    border: 10px, 'solid' #fff;
+} */
+
+   /* .searchBtn{
+       width: 100px;
+       height: 30px;
+       margin-top: -8px;
+       margin-left: 10px;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_qRnAGHixflpv9TmXp2BwGNqmmPpTR9AwA&usqp=CAU")
+   } */
+
+
+   /* .searchBtn:focus {
+       border: none;
+       outline-color: rgb(35, 35, 221);
+   } */
+
+   /* .BtnName {
+       font-family: 'lobster' , cursive;
+       margin-top: -5px;
+       color: black;
+   } */
+
+   /* .searchInput {
+       width: 170px;
+       height: 20px;
+   } */
+
+   /* .CitySearch {
+       margin-top: -12px;
+       font-family:'lobster', cursive;
+   } */
+
+   /* .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 640px;
+    height: 100%;
+    Margin: -50px 400px 0px 400px; 
+    
+   } */
+
+    /* .CityName {
+    margin-left: 125px;
+    font-size: x-large ;
+    font-family: 'lobster', cursive;
+} */
+
+/* .row1 {
+    margin-left:100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row2 {
+    Margin-left: 100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row3 {
+    margin-left: 100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+
+.row4 {
+    margin-left:100px;
+    font-size: x-large;
+    font-family: 'lobster', cursive;
+}
+ */
+#map{
+    
+    
+}
+
+Fieldset {
+    margin: 10px;
+}
+
+
+.flightHeader{
+    position: relative;
+    /* left:-100px; */
+    
+    margin: 15px 10px;
+}
+
+.flightPlanner{
+    font-family: "Lobster",cursive;
+    display: flex;
+    flex: wrap;
+    padding: 5px;
+    /* max-width: 40%; */
+    flex-direction:column;
+    font-size: 20px;
+
+}
+.cityPicker{
+    text-align: center;
+    flex-flow: column wrap;
+    position: relative;
+    max-width: fit-content;
+    
+}
+.datePickers{
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+    
+}
+
+
+.textField{
+    display: flex;
+    flex-shrink: 1;
+    margin: 5px;
+}
+
+.submitButton{
+    position: relative;
+    left: -2px;
+}
+.container{
+    position: relative;
+    left: -2px
+}
